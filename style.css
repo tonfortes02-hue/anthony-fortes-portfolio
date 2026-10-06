@@ -262,5 +262,45 @@ section h2{
 .project-gallery{
     grid-template-columns:1fr;
 }
+/* Gallery */
 
+.project-gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+    margin-top:35px;
+}
+
+.gallery-item{
+    text-align:center;
+}
+
+.gallery-item img{
+    width:100%;
+    max-width:360px;
+    margin:auto;
+    display:block;
+    border-radius:12px;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+}
+
+.gallery-item img:hover{
+    transform:scale(1.03);
+}
+
+.caption{
+    margin-top:12px;
+    color:#cfd8e6;
+    font-size:14px;
+    line-height:1.6;
+    max-width:360px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.lightbox img{
+    max-width:90vw;
+    max-height:90vh;
 }
