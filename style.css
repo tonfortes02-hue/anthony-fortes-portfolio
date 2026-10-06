@@ -229,5 +229,12 @@ font-size:46px;
 .project img:hover{
     transform:scale(1.02);
 }
-    
+.project img{
+    display:block !important;
+    width:700px !important;
+    max-width:100% !important;
+    height:auto !important;
+    margin:20px auto !important;
+    border-radius:12px;
+}
 }
