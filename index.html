@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Anthony Fortes | AI Automation Specialist</title>
+<title>Anthony Fortes | AI Automation & CRM Specialist</title>
 
 <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
 
+<!-- NAVIGATION -->
+
 <nav>
+
 <div class="container nav">
 
 <h2>Anthony Fortes</h2>
 
 <ul>
+
 <li><a href="#about">About</a></li>
 <li><a href="#services">Services</a></li>
 <li><a href="#projects">Projects</a></li>
 <li><a href="#contact">Contact</a></li>
+
 </ul>
 
 </div>
+
 </nav>
+
+<!-- HERO -->
 
 <header>
 
@@ -33,13 +44,17 @@
 <div>
 
 <span class="badge">
+
 AI • CRM • Voice AI
+
 </span>
 
 <h1>
+
 Helping Businesses
 <span>Automate</span>
 Sales & Operations
+
 </h1>
 
 <p>
@@ -51,7 +66,9 @@ that save time and increase revenue.
 </p>
 
 <a href="#projects" class="btn">
+
 View My Work
+
 </a>
 
 </div>
@@ -82,6 +99,8 @@ View My Work
 
 </header>
 
+<!-- ABOUT -->
+
 <section id="about">
 
 <div class="container">
@@ -90,16 +109,15 @@ View My Work
 
 <p>
 
-I'm Anthony Fortes, an AI Automation & CRM Specialist
-focused on helping businesses automate repetitive tasks,
-streamline operations, and increase conversions through
-Voice AI, CRM Systems, and Workflow Automation.
+I'm Anthony Fortes, an AI Automation & CRM Specialist focused on helping businesses automate repetitive tasks, streamline operations, and increase conversions using Voice AI, CRM Systems, and Workflow Automation.
 
 </p>
 
 </div>
 
 </section>
+
+<!-- SERVICES -->
 
 <section id="services">
 
@@ -114,8 +132,9 @@ Voice AI, CRM Systems, and Workflow Automation.
 <h3>AI Voice Receptionist</h3>
 
 <p>
-24/7 AI receptionist for answering calls,
-qualifying leads, and booking appointments.
+
+24/7 AI receptionist that answers calls, qualifies leads, and books appointments automatically.
+
 </p>
 
 </div>
@@ -126,8 +145,7 @@ qualifying leads, and booking appointments.
 
 <p>
 
-Automated pipelines, reminders,
-follow-ups, and lead management.
+Automated pipelines, follow-ups, reminders, and lead management inside GoHighLevel.
 
 </p>
 
@@ -139,8 +157,7 @@ follow-ups, and lead management.
 
 <p>
 
-Workflow automation using Make,
-Zapier, APIs, and AI.
+Workflow automation using APIs, Make.com, Zapier, and AI integrations.
 
 </p>
 
@@ -152,37 +169,93 @@ Zapier, APIs, and AI.
 
 </section>
 
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<div class="container">
+
+<h2>Featured Project</h2>
+
 <div class="project">
 
-    <h3>AI Voice Receptionist & Appointment Booking Automation</h3>
+<h3>
 
-    <p>
-        Built an AI receptionist that answers calls, qualifies leads,
-        books appointments, and updates CRM automatically using
-        Voice AI and GoHighLevel.
-    </p>
+AI Voice Receptionist & Appointment Booking Automation
 
-    <div class="project-gallery">
+</h3>
 
-        <img src="images/voice-ai-builder.png" alt="Voice AI Builder">
+<p>
 
-        <img src="images/appointment-booking.png" alt="Appointment Booking">
+Built an AI receptionist that answers incoming calls, qualifies leads, books appointments automatically, updates CRM records, and triggers automated workflows using GoHighLevel Voice AI.
 
-        <img src="images/conversation-log.png" alt="Conversation Log">
+</p>
 
-        <img src="images/workflow-logs.png" alt="Workflow Logs">
+<div class="project-gallery">
 
-        <img src="images/final-booking.png" alt="Final Booking">
+<img src="images/voice-ai-builder.png"
+alt="Voice AI Builder">
 
-    </div>
+<img src="images/appointment-booking.png"
+alt="Appointment Booking">
+
+<img src="images/conversation-log.png"
+alt="Conversation Log">
+
+<img src="images/workflow-logs.png"
+alt="Workflow Logs">
+
+<img src="images/final-booking.png"
+alt="Final Booking">
 
 </div>
-  
-  <p>
-LinkedIn:
-<a href="https://www.linkedin.com/in/anthonyfortes-strategist">
-linkedin.com/in/https://www.linkedin.com/in/anthonyfortes-strategist
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="container center">
+
+<h2>
+
+Let's Work Together
+
+</h2>
+
+<p>
+
+Interested in AI Automation, CRM Systems, or Business Workflow Automation?
+
+</p>
+
+<a href="mailto:ton.fortes02@email.com" class="btn">
+
+Contact Me
+
 </a>
+
+<br><br>
+
+<p>
+
+LinkedIn
+
+<br>
+
+<a
+href="https://www.linkedin.com/in/anthonyfortes-strategist"
+target="_blank">
+
+linkedin.com/in/anthonyfortes-strategist
+
+</a>
+
 </p>
 
 </div>
@@ -199,5 +272,42 @@ linkedin.com/in/https://www.linkedin.com/in/anthonyfortes-strategist
 
 </footer>
 
+<!-- LIGHTBOX -->
+
+<div id="lightbox" class="lightbox">
+
+<span class="close">&times;</span>
+
+<img id="lightbox-img">
+
+</div>
+
+<script>
+
+const lightbox=document.getElementById("lightbox");
+
+const lightboxImg=document.getElementById("lightbox-img");
+
+document.querySelectorAll(".project-gallery img").forEach(img=>{
+
+img.onclick=()=>{
+
+lightbox.style.display="flex";
+
+lightboxImg.src=img.src;
+
+}
+
+});
+
+lightbox.onclick=()=>{
+
+lightbox.style.display="none";
+
+};
+
+</script>
+
 </body>
+
 </html>
